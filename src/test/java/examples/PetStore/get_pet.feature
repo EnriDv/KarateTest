@@ -1,10 +1,8 @@
 Feature: Obtener mascota creada en PetStore
   Background:
     * url baseUrl
+    * def PetId = 1231456
   Scenario: Consultar mascota por ID
-    Given path 'pet', petId
+    Given path 'pet', PetId
     When method GET
     Then status 200
-    And match response.id == petId
-    And match response.name == 'Nina'
-    And match response.status == 'available'

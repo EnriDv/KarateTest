@@ -6,7 +6,7 @@ Feature: Crear mascota en PetStore
     And request
     """
     {
-    "id": 1212121,
+    "id": 1231456,
     "category": {
     "id": 0,
     "name": "Cat"
