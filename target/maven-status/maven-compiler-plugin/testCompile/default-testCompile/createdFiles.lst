@@ -1,3 +1,5 @@
 examples\PetStore\PetStoreRunner.class
 examples\ExamplesTest.class
+examples\PetUser\PetUserRunner.class
+examples\StoreOrders\StoreOrdersRunner.class
 examples\users\UsersRunner.class

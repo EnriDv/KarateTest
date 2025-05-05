@@ -6,7 +6,7 @@ Feature: Crear mascota en PetStore
     And request
     """
     {
-    "id": 1231456,
+    "id": 200,
     "category": {
     "id": 0,
     "name": "Cat"
@@ -26,5 +26,6 @@ Feature: Crear mascota en PetStore
     """
     When method Post
     Then status 200
+    And match response.id == 200
     And match response.name == 'Nina'
     And match response.category.name == 'Cat'

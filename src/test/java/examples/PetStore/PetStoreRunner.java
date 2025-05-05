@@ -4,7 +4,7 @@ import com.intuit.karate.junit5.Karate;
 
 public class PetStoreRunner {
     @Karate.Test
-    Karate testUsers() {
-        return Karate.run("full_flow_pet").relativeTo(getClass());
+    Karate testPetStore() {
+        return Karate.run("create_pet","get_pet","set_pet","delete_pet").relativeTo(getClass());
     }
 }
